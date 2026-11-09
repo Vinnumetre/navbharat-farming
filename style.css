@@ -1,0 +1,546 @@
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f7faf5;
+    color: #243b2a;
+}
+
+/* NAVIGATION */
+header {
+    background: #ffffff;
+    padding: 18px 7%;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #246b40;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #334d39;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #70a83b;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+    padding: 80px 9%;
+    color: white;
+
+    background:
+    linear-gradient(90deg, rgba(12,45,27,0.88), rgba(12,45,27,0.25)),
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef")
+    center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #d5ed9b;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.hero-content > p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    background: #4e8b38;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2d622e;
+    transform: translateY(-3px);
+}
+
+.btn-light {
+    background: white;
+    color: #285b36;
+}
+
+.btn-light:hover {
+    background: #e7f0df;
+    color: #285b36;
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 85px 10%;
+    text-align: center;
+}
+
+.about h2,
+.products h2,
+.contact h2 {
+    font-size: 34px;
+    color: #28613b;
+    margin-bottom: 22px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #657467;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 75px 9%;
+    background: #edf4e9;
+    text-align: center;
+}
+
+.section-text {
+    color: #68796a;
+    margin-bottom: 35px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: white;
+    width: 350px;
+    border-radius: 14px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-image {
+    height: 230px;
+    background-size: cover;
+    background-position: center;
+}
+
+.mushroom-image {
+    background-image: url("https://images.unsplash.com/photo-1504545102780-26774c1bb073");
+}
+
+.vegetable-image {
+    background-image: url("https://images.unsplash.com/photo-1540420773420-3366772f4999");
+}
+
+.product-card h3 {
+    color: #28613b;
+    margin: 22px 10px 12px;
+    font-size: 22px;
+}
+
+.product-card p {
+    color: #68796a;
+    padding: 0 22px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.card-btn {
+    color: #398047;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* BUSINESS SECTION */
+.business {
+    padding: 75px 9%;
+    text-align: center;
+}
+
+.business h2 {
+    color: #28613b;
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.business-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.business-container div {
+    background: #e6f0df;
+    padding: 35px;
+    border-radius: 12px;
+    width: 320px;
+}
+
+.business-container h3 {
+    color: #34733f;
+    margin-bottom: 15px;
+}
+
+.business-container p {
+    color: #657467;
+    line-height: 1.7;
+}
+
+/* CONTACT SECTION */
+.contact {
+    padding: 75px 20px;
+    text-align: center;
+    background: #eaf2e5;
+}
+
+.contact p {
+    margin: 12px;
+    color: #536c57;
+}
+
+.contact .btn {
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #193d29;
+    color: white;
+    padding: 35px 15px;
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 12px;
+    color: #d4e9ad;
+}
+
+footer p {
+    margin: 10px;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .hero-content > p {
+        font-size: 16px;
+    }
+
+    .about h2,
+    .products h2,
+    .business h2,
+    .contact h2 {
+        font-size: 27px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
+/* MUSHROOM PAGE */
+
+.mushroom-hero {
+    min-height: 480px;
+    padding: 80px 9%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background:
+    linear-gradient(90deg, rgba(15,48,30,0.88), rgba(15,48,30,0.3)),
+    url("https://images.unsplash.com/photo-1504545102780-26774c1bb073")
+    center/cover no-repeat;
+}
+
+.mushroom-hero h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.mushroom-hero p {
+    max-width: 600px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.mushroom-benefits {
+    padding: 70px 8%;
+    text-align: center;
+    background: #edf4e9;
+}
+
+.mushroom-benefits h2,
+.mushroom-gallery h2,
+.mushroom-orders h2 {
+    color: #28613b;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.benefit-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.benefit-card {
+    background: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+.benefit-card h3 {
+    color: #34733f;
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    color: #657467;
+    line-height: 1.7;
+}
+
+.mushroom-gallery {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 350px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.mushroom-orders {
+    padding: 70px 20px;
+    text-align: center;
+    background: #eaf2e5;
+}
+
+.mushroom-orders p {
+    margin: 15px;
+    color: #536c57;
+}
+
+.mushroom-orders .btn {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .mushroom-hero h1 {
+        font-size: 35px;
+    }
+
+    .gallery-container img {
+        width: 100%;
+    }
+}
+/* VEGETABLE PAGE */
+
+.vegetable-hero {
+    min-height: 480px;
+    padding: 80px 9%;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    background:
+    linear-gradient(90deg, rgba(15,48,30,0.85), rgba(15,48,30,0.25)),
+    url("https://images.unsplash.com/photo-1540420773420-3366772f4999")
+    center/cover no-repeat;
+}
+
+.vegetable-hero h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.vegetable-hero p {
+    max-width: 600px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.vegetable-products {
+    padding: 75px 8%;
+    background: #edf4e9;
+    text-align: center;
+}
+
+.vegetable-products h2 {
+    font-size: 34px;
+    color: #28613b;
+    margin-bottom: 15px;
+}
+
+.vegetable-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 35px;
+}
+
+.vegetable-card {
+    background: white;
+    width: 310px;
+    padding-bottom: 28px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.vegetable-card:hover {
+    transform: translateY(-8px);
+}
+
+.vegetable-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.vegetable-card h3 {
+    color: #28613b;
+    font-size: 22px;
+    margin: 20px 10px 12px;
+}
+
+.vegetable-card p {
+    color: #657467;
+    padding: 0 20px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.vegetable-card .card-btn {
+    color: #398047;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.vegetable-contact {
+    padding: 75px 20px;
+    text-align: center;
+    background: #eaf2e5;
+}
+
+.vegetable-contact h2 {
+    color: #28613b;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.vegetable-contact p {
+    margin: 15px;
+    color: #536c57;
+}
+
+.vegetable-contact .btn {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .vegetable-hero h1 {
+        font-size: 35px;
+    }
+
+    .vegetable-card {
+        width: 100%;
+    }
+}
